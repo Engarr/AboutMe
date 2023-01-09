@@ -1,0 +1,112 @@
+.profilBox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 200px;
+	left: 50%;
+	width: 40%;
+	height: 200px;
+	transform: translate(-50%);
+	background-color: #393e46;
+
+	border-radius: 25px;
+}
+
+.infoBox {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 2em 4em;
+}
+.name {
+	font-size: 2em;
+	font-weight: 700;
+	padding-bottom: 0.2em;
+	color: #00adb5;
+}
+.detail {
+	font-size: 1.5em;
+	color: white;
+}
+
+.socialMediaBox {
+	display: flex;
+	width: 100%;
+	font-size: 2em;
+	padding-top: 0.5em;
+}
+.socialMediaBox p {
+	margin-right: 10px;
+	cursor: pointer;
+}
+.imgBox {
+	background-color: bisque;
+}
+.fb {
+	transition: color 0.3s;
+}
+.fb:hover {
+	color: #385898;
+}
+.ig {
+	transition: color 0.3s;
+}
+.ig:hover {
+	color: #9e3476;
+}
+.li {
+	transition: color 0.3s;
+}
+.li:hover {
+	color: #1f4591;
+}
+
+.imgBox {
+	position: absolute;
+	right: -20px;
+	top: -30px;
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	background-color: #fff;
+	box-shadow: 0 0 10px black;
+}
+
+@media (max-width: 414px) {
+	.imgBox {
+		position: absolute;
+		left: 67%;
+		top: 75%;
+		transform: translate(-50%);
+	}
+}
+@media (max-width: 768px) {
+	.imgBox {
+		left: 72%;
+		top: 60%;
+	}
+}
+@media (max-width: 769px) {
+	.profilBox {
+		position: relative;
+		top: 100px;
+		left: 50%;
+		width: 90%;
+		transform: translate(-50%);
+	}
+	.infoBox {
+		top: 0;
+		left: 0;
+		padding: 2em 2em;
+	}
+}
+@media (max-width: 1200px){
+	.profilBox {
+		
+		width: 80%;
+		
+	}
+}
