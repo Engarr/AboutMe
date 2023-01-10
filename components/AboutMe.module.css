@@ -1,4 +1,57 @@
-.aboutmeBox{
-    position: absolute;
-    top: 500px;
+.aboutmeBox {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 2em 4em;
+	top: 300px;
+	background-color: #393e46;
+	left: 50%;
+	transform: translate(-50%);
+	border-radius: 25px;
+	color: #f9f9f9;
+	width: 50%;
+}
+.aboutmeBox h2 {
+	color: #00adb5;
+	margin-bottom: 0.5em;
+	margin-top: 0.5em;
+	font-size: 2em;
+}
+
+.historyBox span {
+	font-weight: bold;
+	color: #00adb5;
+}
+
+.btn {
+	margin-top: 1em;
+	padding: 1em 2em;
+	border-radius: 25px;
+	border: none;
+	box-shadow: 0 0 5px #faf4b7;
+	cursor: pointer;
+	color: #00adb5;
+	background-color: #EEEEEE;
+	transition: background-color 0.3s, color 0.3s;
+}
+.btn:hover {
+	background-color: #222831;
+	color: #EEEEEE;
+}
+
+@media only screen and (max-width: 1023px) {
+	.aboutmeBox {
+		width: 90%;
+	}
+	.aboutmeBox {
+		top: 400px;
+		padding: 1em 1em;
+	}
+	.btnBox {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
 }
