@@ -1,8 +1,8 @@
 import React from 'react'
-
+import classes from './AboutMe.module.css'
 const AboutMe = () => {
   return (
-    <div>AboutMe</div>
+    <div className={classes.aboutmeBox}>AboutMe</div>
   )
 }
 

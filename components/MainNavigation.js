@@ -22,6 +22,7 @@ const MainNavigation = () => {
 			<GiHamburgerMenu className={classes.burgerIcon} onClick={showMenu} />
 			{isShown ? (
 				<div>
+					<div className={classes.backdrop} onClick={closeMenu}>shgs</div>
 					<FaWindowClose className={classes.closeBtn} onClick={closeMenu} />
 					<ul className={classes.headerItems}>
 						<li>

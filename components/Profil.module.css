@@ -7,7 +7,7 @@
 	position: absolute;
 	top: 200px;
 	left: 50%;
-	width: 40%;
+	width: 50%;
 	height: 200px;
 	transform: translate(-50%);
 	background-color: #393e46;
@@ -75,38 +75,24 @@
 	box-shadow: 0 0 10px black;
 }
 
-@media (max-width: 414px) {
-	.imgBox {
-		position: absolute;
-		left: 67%;
-		top: 75%;
-		transform: translate(-50%);
-	}
-}
-@media (max-width: 768px) {
-	.imgBox {
-		left: 72%;
-		top: 60%;
-	}
-}
-@media (max-width: 769px) {
+@media only screen and (max-width: 1023px){
 	.profilBox {
 		position: relative;
-		top: 100px;
+		top: 150px;
 		left: 50%;
 		width: 90%;
 		transform: translate(-50%);
 	}
+	.imgBox {
+		position: absolute;
+		left: 50%;
+		top: 80%;
+		transform: translate(-50%);
+	}
+	
 	.infoBox {
 		top: 0;
 		left: 0;
 		padding: 2em 2em;
-	}
-}
-@media (max-width: 1200px){
-	.profilBox {
-		
-		width: 80%;
-		
 	}
 }
