@@ -9,9 +9,49 @@ a {
 	text-decoration: none;
 	color: black;
 }
-body {
-	background-color: #EEEEEE;
-}
+
 li {
 	list-style: none;
 }
+body{
+	background-position: 100%;
+	background-color: var(--backgroundFirst-color);
+}
+
+
+:root {
+	--text-color: #00ADB5;
+	--smallText-color: #f9f9f9;
+	--backgroundFirst-color: #EEEEEE;
+	--backgroundSecond-color: #222831;
+} 
+
+
+
+/* :root {
+	--text-color: #2ebdbd;
+	--smallText-color: #f9f9f9;
+	--backgroundFirst-color: #eeee;
+	--backgroundSecond-color: #353333;
+}
+
+.light {
+	--text-color: #2ebdbd;
+	--smallText-color: #f9f9f9;
+	--backgroundFirst-color: rgba(134, 122, 122, 0.933);
+	--backgroundSecond-color: #353333;
+}
+.dark {
+	--text-color: #333333;
+	--smallText-color: #333333;
+	--backgroundFirst-color: #333333;
+	--backgroundSecond-color: #f9f9f9;
+}
+.light {
+	height: 100%;
+	background-color: rgba(129, 107, 107, 0.933);
+}
+.dark {
+	height: 100vh;
+	background-color: #333333;
+} */

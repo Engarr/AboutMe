@@ -1,9 +1,10 @@
+
 .profilBox {
 	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	top: 200px;
+	top: 150px;
 	left: 50%;
 	width: 50%;
 	height: 200px;

@@ -5,7 +5,7 @@
 	justify-content: center;
 	align-items: flex-start;
 	padding: 2em 4em;
-	top: 300px;
+	top: 200px;
 	background-color: #393e46;
 	left: 50%;
 	transform: translate(-50%);
@@ -14,7 +14,7 @@
 	width: 50%;
 }
 .aboutmeBox h2 {
-	color: #00adb5;
+	color: var(--text-color);
 	margin-bottom: 0.5em;
 	margin-top: 0.5em;
 	font-size: 2em;
@@ -33,12 +33,12 @@
 	box-shadow: 0 0 5px #faf4b7;
 	cursor: pointer;
 	color: #00adb5;
-	background-color: #EEEEEE;
+	background-color: var(--backgroundFirst-color);
 	transition: background-color 0.3s, color 0.3s;
 }
 .btn:hover {
 	background-color: #222831;
-	color: #EEEEEE;
+	color: var(--backgroundFirst-color);
 }
 
 @media only screen and (max-width: 1023px) {
