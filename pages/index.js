@@ -6,7 +6,7 @@ const index = () => {
 
 
 	return (
-		<div>
+		<div >
 			<Profil/>
 			<AboutMe/>
 		</div>

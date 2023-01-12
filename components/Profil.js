@@ -13,17 +13,16 @@ const Profil = () => {
 				</div>
 				<div className={classes.socialMediaBox}>
 					<p>
-						<Link href='https://www.facebook.com/profile.php?id=100001584875603'>
-							<BsFacebook className={classes.fb} />
-						</Link>
+						<Link href='https://www.facebook.com/profile.php?id=100001584875603'><BsFacebook className={classes.fb} /></Link>
+						
 					</p>
 					<p>
-						<a href='https://www.instagram.com/wosiiiu/'></a>
-						<BsInstagram className={classes.ig} />
+						<a href='https://www.instagram.com/wosiiiu/'><BsInstagram className={classes.ig} /></a>
+						
 					</p>
 					<p>
-						<a href='/'></a>
-						<BsLinkedin className={classes.li} />
+						<a href='/'><BsLinkedin className={classes.li} /></a>
+						
 					</p>
 				</div>
 			</div>

@@ -5,7 +5,7 @@ import Footer from './Footer';
 
 const Layout = (props) => {
 	return (
-		<div>
+		<>
 			<Head>
 				<title> AboutMe: Łukasz Woś </title>
 			</Head>
@@ -16,7 +16,7 @@ const Layout = (props) => {
 			<footer>
 				<Footer/>
 			</footer>
-		</div>
+		</>
 	);
 };
 

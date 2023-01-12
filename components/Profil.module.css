@@ -1,15 +1,14 @@
-
 .profilBox {
 	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	top: 150px;
+	top: 200px;
 	left: 50%;
 	width: 50%;
 	height: 200px;
 	transform: translate(-50%);
-	background-color: #393e46;
+	background-color: var(--backgroundSecond-color);
 
 	border-radius: 25px;
 }
@@ -24,11 +23,11 @@
 	font-size: 2em;
 	font-weight: 700;
 	padding-bottom: 0.2em;
-	color: #00adb5;
+	color: var(--text-color);
 }
 .detail {
 	font-size: 1.5em;
-	color: white;
+	color: var(--smallText-color);
 }
 
 .socialMediaBox {
@@ -37,14 +36,16 @@
 	font-size: 2em;
 	padding-top: 0.5em;
 }
-.socialMediaBox p {
+.socialMediaBox p a {
 	margin-right: 10px;
 	cursor: pointer;
+	color: rgba(255, 255, 255, 0.623);
 }
 .imgBox {
 	background-color: bisque;
 }
 .fb {
+	
 	transition: color 0.3s;
 }
 .fb:hover {

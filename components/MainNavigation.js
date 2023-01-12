@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { BsCodeSlash } from 'react-icons/bs';
-import { BsGithub } from 'react-icons/bs';
+import { BsGithub} from 'react-icons/bs';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { FaWindowClose } from 'react-icons/fa';
 
 import classes from './MainNavigation.module.css';
-
+import DarkMode from "./DarkMode"
 const MainNavigation = () => {
 	const [isShown, setIsShown] = useState(false);
 
@@ -45,7 +45,7 @@ const MainNavigation = () => {
 							</a>
 						</li>
 						<li>
-							<Link href='/'>About me</Link>
+							<DarkMode/>
 						</li>
 					</ul>
 				</div>
@@ -72,7 +72,7 @@ const MainNavigation = () => {
 							</a>
 						</li>
 						<li>
-							<Link href='/'>About me</Link>
+							<DarkMode/>
 						</li>
 					</ul>
 				</div>

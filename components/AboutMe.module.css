@@ -5,12 +5,12 @@
 	justify-content: center;
 	align-items: flex-start;
 	padding: 2em 4em;
-	top: 200px;
-	background-color: #393e46;
+	top: 300px;
+	background-color: var(--backgroundSecond-color);
 	left: 50%;
 	transform: translate(-50%);
 	border-radius: 25px;
-	color: #f9f9f9;
+	color: var(--smallText-color);
 	width: 50%;
 }
 .aboutmeBox h2 {
@@ -22,7 +22,7 @@
 
 .historyBox span {
 	font-weight: bold;
-	color: #00adb5;
+	color: var(--text-color);
 }
 
 .btn {
@@ -30,14 +30,14 @@
 	padding: 1em 2em;
 	border-radius: 25px;
 	border: none;
-	box-shadow: 0 0 5px #faf4b7;
+	box-shadow: 0 0 5px #444441;
 	cursor: pointer;
-	color: #00adb5;
-	background-color: var(--backgroundFirst-color);
+	color: var(--text-color);
+	background-color: var(--smallText-color);
 	transition: background-color 0.3s, color 0.3s;
 }
 .btn:hover {
-	background-color: #222831;
+	background-color: var(--backgroundSecond-color);
 	color: var(--backgroundFirst-color);
 }
 
