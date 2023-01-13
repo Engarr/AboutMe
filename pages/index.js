@@ -1,14 +1,12 @@
 import React from 'react';
 import Profil from '../components/Profil';
-import AboutMe from '../components/AboutMe'
+import AboutMe from '../components/AboutMe';
 
 const index = () => {
-
-
 	return (
-		<div >
-			<Profil/>
-			<AboutMe/>
+		<div>
+			<Profil />
+			<AboutMe />
 		</div>
 	);
 };

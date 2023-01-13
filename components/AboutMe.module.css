@@ -32,13 +32,13 @@
 	border: none;
 	box-shadow: 0 0 5px #444441;
 	cursor: pointer;
-	color: var(--text-color);
+	color: var(--backgroundFirst-color);
 	background-color: var(--smallText-color);
 	transition: background-color 0.3s, color 0.3s;
 }
 .btn:hover {
-	background-color: var(--backgroundSecond-color);
-	color: var(--backgroundFirst-color);
+	background-color: var(--backgroundFirst-color);
+	color: var(--text-color);
 }
 
 @media only screen and (max-width: 1023px) {

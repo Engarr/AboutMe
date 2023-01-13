@@ -4,8 +4,9 @@
 	font-size: 1em;
 	cursor: pointer;
 	padding: 0.5em 1em;
-	transition: color 0.3s;
+	transition: color 0.3s ease-in;
 }
 .darkModeBtn:hover {
 	color: yellow;
+	
 }

@@ -37,7 +37,7 @@ body.light {
 }
 
 body.dark {
-	--text-color: #25ad47;
+	--text-color: #61b1f3;
 	--smallText-color: #f0f5f9;
 	--backgroundFirst-color: rgb(20, 20, 20);
 	--backgroundSecond-color: #474645;
