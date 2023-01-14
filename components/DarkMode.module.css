@@ -1,12 +1,36 @@
 .darkModeBtn {
 	background-color: transparent;
+	width: 100px;
 	border: none;
 	font-size: 1em;
 	cursor: pointer;
 	padding: 0.5em 1em;
 	color: var(--text-color);
-	transition: color ease-in 0.3s ;
+	transition: color ease-in 0.3s;
 }
 .darkModeBtn:hover {
 	color: yellow;
+}
+.hide {
+	position: relative;
+	top: 0;
+	transform: translate(-50%);
+	width: 100%;
+	animation: slide 0.5s forwards;
+}
+
+@keyframes slide {
+	0% {
+		transform: scale(0);
+		top: -100px;
+	}
+
+	50% {
+		transform: scale(0.5);
+	}
+
+	100% {
+		transform: scale(1);
+		top: 0px;
+	}
 }

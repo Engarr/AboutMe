@@ -29,7 +29,7 @@ const DarkMode = () => {
 
 	return (
 		<button className={classes.darkModeBtn} onClick={(e) => switchTheme(e)}>
-			{theme === 'light' ? <BsFillMoonFill /> : <BsFillSunFill />}
+			{theme === 'light' ? <BsFillMoonFill className={classes.hide} /> : <BsFillSunFill className={classes.hide}/>}
 		</button>
 	);
 };
