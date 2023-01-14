@@ -9,9 +9,10 @@
 	height: 200px;
 	transform: translate(-50%);
 	background-color: var(--backgroundSecond-color);
-
 	border-radius: 25px;
+	box-shadow: var(--box-shadow)
 }
+
 
 .infoBox {
 	position: absolute;

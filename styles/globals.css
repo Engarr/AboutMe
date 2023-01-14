@@ -19,6 +19,7 @@ a {
 	--backgroundFirst-color: #eeeeee;
 	--backgroundSecond-color: #353333;
 	--navBacground: #222831e8;
+	--box-shadow: 0px 0px 20px 4px rgb(12 152 245);
 }
 
 body {
@@ -34,6 +35,7 @@ body.light {
 	--backgroundFirst-color: #eeeeee;
 	--backgroundSecond-color: #222831;
 	--navBacground: #222831e8;
+	--box-shadow: 0px 0px 30px 0px #2ebdbd;
 }
 
 body.dark {
@@ -42,4 +44,5 @@ body.dark {
 	--backgroundFirst-color: rgb(20, 20, 20);
 	--backgroundSecond-color: #474645;
 	--navBacground: #474645c4;
+	--box-shadow: 0px 0px 10px 1px rgb(12 152 245);
 }

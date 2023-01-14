@@ -13,25 +13,30 @@ const Profil = () => {
 				</div>
 				<div className={classes.socialMediaBox}>
 					<p>
-						<Link href='https://www.facebook.com/profile.php?id=100001584875603'><BsFacebook className={classes.fb} /></Link>
-						
+						<Link href='https://www.facebook.com/profile.php?id=100001584875603'>
+							<BsFacebook className={classes.fb} />
+						</Link>
 					</p>
 					<p>
-						<a href='https://www.instagram.com/wosiiiu/'><BsInstagram className={classes.ig} /></a>
-						
+						<a href='https://www.instagram.com/wosiiiu/'>
+							<BsInstagram className={classes.ig} />
+						</a>
 					</p>
 					<p>
-						<a href='/'><BsLinkedin className={classes.li} /></a>
-						
+						<a href='/'>
+							<BsLinkedin className={classes.li} />
+						</a>
 					</p>
 				</div>
 			</div>
 
 			<div>
-				<img
-					src='https://scontent.fktw1-1.fna.fbcdn.net/v/t39.30808-6/244415886_4620306191365498_9152555187707568624_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=g41mF03kJLsAX-xWyJo&_nc_ht=scontent.fktw1-1.fna&oh=00_AfCCK_UvOkti18IoEZasmHxDb6-_bUyZStNxEd6umoFTDg&oe=63C200F9'
-					className={classes.imgBox}
-				/>
+				<a href='https://www.facebook.com/profile.php?id=100001584875603'>
+					<img
+						src='https://scontent.fktw1-1.fna.fbcdn.net/v/t39.30808-6/244415886_4620306191365498_9152555187707568624_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=g41mF03kJLsAX-xWyJo&_nc_ht=scontent.fktw1-1.fna&oh=00_AfCCK_UvOkti18IoEZasmHxDb6-_bUyZStNxEd6umoFTDg&oe=63C200F9'
+						className={classes.imgBox}
+					/>
+				</a>
 			</div>
 		</div>
 	);
