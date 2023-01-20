@@ -20,6 +20,8 @@ a {
 	--backgroundSecond-color: #222831;
 	--navBacground: #222831e8;
 	--box-shadow: 0px 0px 30px 0px #2ebdbd;
+	--icone-bacground: rgba(255, 255, 255, 0.623);
+	--burger-color: #222831;
 }
 
 body {
@@ -29,20 +31,24 @@ body {
 	padding: 0;
 }
 
-body.light {
+body.dark {
 	--text-color: #2ebdbd;
 	--smallText-color: #eeeeee;
 	--backgroundFirst-color: #eeeeee;
 	--backgroundSecond-color: #222831;
 	--navBacground: #222831e8;
 	--box-shadow: 0px 0px 30px 0px #2ebdbd;
+	--icone-background: rgba(255, 255, 255, 0.623);
+	--burger-color: #a0a1a3;
 }
 
-body.dark {
-	--text-color: #61b1f3;
-	--smallText-color: #f0f5f9;
-	--backgroundFirst-color: rgb(20, 20, 20);
-	--backgroundSecond-color: #474645;
-	--navBacground: #474645c4;
+body.light {
+	--text-color: #066bdf;
+	--smallText-color: #000000;
+	--backgroundFirst-color: rgb(0, 0, 0);
+	--backgroundSecond-color: #ffffff;
+	--navBacground: #ffffffd8;
 	--box-shadow: 0px 0px 10px 1px rgb(12 152 245);
+	--icone-background: rgb(102, 102, 102);
+	--burger-color: #222831;
 }

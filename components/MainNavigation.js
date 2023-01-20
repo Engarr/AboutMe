@@ -4,9 +4,9 @@ import { BsCodeSlash } from 'react-icons/bs';
 import { BsGithub} from 'react-icons/bs';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { FaWindowClose } from 'react-icons/fa';
-
 import classes from './MainNavigation.module.css';
 import DarkMode from "./DarkMode"
+
 const MainNavigation = () => {
 	const [isShown, setIsShown] = useState(false);
 
@@ -20,9 +20,10 @@ const MainNavigation = () => {
 	return (
 		<header className={classes.header}>
 			<GiHamburgerMenu className={classes.burgerIcon} onClick={showMenu} />
+			
 			{isShown ? (
-				<div>
-					<div className={classes.backdrop} onClick={closeMenu}>shgs</div>
+				<div className={classes.backdrop} onClick={closeMenu}>
+					
 					<FaWindowClose className={classes.closeBtn} onClick={closeMenu} />
 					<ul className={classes.headerItems}>
 						<li>

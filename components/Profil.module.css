@@ -40,7 +40,7 @@
 .socialMediaBox p a {
 	margin-right: 10px;
 	cursor: pointer;
-	color: rgba(255, 255, 255, 0.623);
+	color: var(--icone-background);
 }
 .imgBox {
 	background-color: bisque;

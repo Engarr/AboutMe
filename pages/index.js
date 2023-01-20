@@ -1,15 +1,21 @@
 import React from 'react';
 import Profil from '../components/Profil';
-import AboutMe from '../components/AboutMe';
 import classes from '../styles/index.module.css';
-import { FaReact } from 'react-icons/fa';
 
 const index = () => {
+	
 	return (
 		<div className={classes.mainBox}>
-			<FaReact className={classes.cube} />
+			<div className={classes.imageShadow}></div>
+
+			<img
+				src='https://images.pexels.com/photos/777001/pexels-photo-777001.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+				alt=''
+				className={classes.backgroundImage}
+			/>
+
+
 			<Profil />
-			<AboutMe />
 		</div>
 	);
 };

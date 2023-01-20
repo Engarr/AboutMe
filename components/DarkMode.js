@@ -22,14 +22,14 @@ const DarkMode = () => {
 		const data = localStorage.setItem('theme', newTheme);
 		return (
 			<button className={classes.darkModeBtn} onClick={(e) => switchTheme(e)}>
-				{data === 'light' ? <BsFillMoonFill /> : <BsFillSunFill />}
+				{data !== 'light' ? <BsFillMoonFill /> : <BsFillSunFill />}
 			</button>
 		);
 	}, [theme]);
 
 	return (
 		<button className={classes.darkModeBtn} onClick={(e) => switchTheme(e)}>
-			{theme === 'light' ? <BsFillMoonFill className={classes.hide} /> : <BsFillSunFill className={classes.hide}/>}
+			{theme !== 'light' ? <BsFillMoonFill className={classes.hide} /> : <BsFillSunFill className={classes.hide}/>}
 		</button>
 	);
 };
