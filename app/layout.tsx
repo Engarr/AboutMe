@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${inter.className} text-gray-950 relative h-[1000px]  `}>
+        className={`${inter.className} text-gray-950 relative h-[10000px]  `}>
         <div className='main'>
           <div className='gradient' />
         </div>
