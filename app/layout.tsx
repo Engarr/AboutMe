@@ -17,12 +17,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={`${inter.className} text-gray-950 h-[1000px] `}>
+      <body
+        className={`${inter.className} text-gray-950 relative h-[1000px]  `}>
         <div className='main'>
           <div className='gradient' />
         </div>
         <Header />
-        <main className='app'>{children}</main>
+        <main className='app pt-28 sm:pt-36'>{children}</main>
       </body>
     </html>
   );

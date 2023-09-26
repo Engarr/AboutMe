@@ -40,6 +40,14 @@ export const experiencesData = [
     date: '10.2014 - 02.2018',
   },
   {
+    title: 'Company Owner',
+    location: 'Rzeszów, Poland',
+    description:
+      'Operating an e-commerce platform, which encompasses the entire spectrum of tasks involved in managing an online shop, such as crafting a comprehensive product catalog, managing orders, and providing post-purchase customer support.',
+    icon: React.createElement(CgWorkAlt),
+    date: '2016-present',
+  },
+  {
     title: 'Courses',
     location: 'Rzeszów, Poland',
     description:
@@ -53,7 +61,7 @@ export const projectsData = [
   {
     title: 'WindMill',
     description:
-      'I was working on my own project of an imaginary store that sells products in the grain department.',
+      'I worked on my own full-stack project of an imaginary store that sells products in the grain department.',
     tags: ['React', 'Express', 'MongoDB', 'TypeScript', 'Redux'],
     imageUrl: windmillImg,
   },
