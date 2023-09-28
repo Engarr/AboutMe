@@ -11,7 +11,7 @@ import { FaGithubSquare } from 'react-icons/fa';
 import { useSectionInView } from '@/lib/hooks';
 
 const Intro = () => {
-  const { ref } = useSectionInView('Home', 0.5);
+  const { ref } = useSectionInView('Home', 0.8);
 
   return (
     <section
