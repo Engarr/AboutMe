@@ -58,10 +58,19 @@
   top: 80px;
   opacity: 0.15;
 }
+.flexCenter {
+  @apply flex justify-center items-center;
+}
 .app {
-  @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
+  @apply relative z-10 flexCenter flex-col max-w-7xl mx-auto sm:px-16 px-6;
 }
 
 html {
   --line-color: #e5e7eb;
+}
+.borderBlack {
+  @apply border border-black/10;
+}
+.buttonHover {
+  @apply focus:scale-110 hover:scale-110 active:scale-105;
 }

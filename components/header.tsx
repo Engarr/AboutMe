@@ -17,11 +17,11 @@ const Header = () => {
         initial={{ opacity: 0, y: -100, x: '-50%' }}
         animate={{ opacity: 1, y: 0, x: '-50%' }}></motion.div>
       <nav className='flex fixed top-[0.15rem] left-1/2 h-12 -translate-x-1/2 py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0'>
-        <ul className='flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-5 '>
+        <ul className='flexCenter w-[22rem] flex-wrap gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-5 '>
           {links.map((link) => (
             <motion.li
               key={link.hash}
-              className='h-3/4 flex items-center justify-center relative'
+              className='h-3/4 flexCenter relative'
               initial={{ opacity: 0, y: -100 }}
               animate={{ opacity: 1, y: 0 }}>
               <Link
@@ -31,7 +31,7 @@ const Header = () => {
                   setTimeOfLastClick(Date.now());
                 }}
                 className={clsx(
-                  'flex justify-center items-center px-3 py-3 hover:text-gray-950 transition',
+                  'flexCenter px-3 py-3 hover:text-gray-950 transition',
                   { 'text-gray-950': activeSection === link.name }
                 )}>
                 {link.name}

@@ -3,6 +3,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import ActiveSectionContextProvider from '@/context/activeSection';
+import { Toaster } from 'react-hot-toast';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -18,14 +19,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en' className='!scroll-smooth'>
-      <body
-        className={`${inter.className} text-gray-950 relative h-[10000px]  `}>
+      <body className={`${inter.className} text-gray-950 relative`}>
         <div className='main'>
           <div className='gradient' />
         </div>
         <ActiveSectionContextProvider>
           <Header />
           <main className='app pt-28 sm:pt-36'>{children}</main>
+          <Toaster position='top-right'  />
         </ActiveSectionContextProvider>
       </body>
     </html>

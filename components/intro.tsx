@@ -9,12 +9,19 @@ import { BsArrowRight, BsLinkedin } from 'react-icons/bs';
 import { HiDownload } from 'react-icons/hi';
 import { FaGithubSquare } from 'react-icons/fa';
 import { useSectionInView } from '@/lib/hooks';
+import { useActiveSectionContext } from '@/context/activeSection';
 
 const Intro = () => {
   const { ref } = useSectionInView('Home', 0.8);
+  const { activeSection, setActiveSection, setTimeOfLastClick } =
+    useActiveSectionContext();
 
   return (
     <section
+      onClick={() => {
+        setActiveSection('Contact');
+        setTimeOfLastClick(Date.now());
+      }}
       className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]'
       id='home'
       ref={ref}>
@@ -59,18 +66,18 @@ const Intro = () => {
         <span className='underline'>React (Next.js)</span>.
       </motion.h1>
       <motion.div
-        className='flex flex-col sm:flex-row items-center justify-center gap-4 px-4 font-medium'
+        className='flexCenter flex-col sm:flex-row gap-4 px-4 font-medium'
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.1 }}>
         <Link
           href='/#contact'
-          className='group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition'>
+          className='group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none buttonHover hover:bg-gray-950  transition'>
           Contact me here{' '}
           <BsArrowRight className='opacity-70 group-hover:translate-x-1 transition' />
         </Link>
         <a
-          className='group bg-white  px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110  transition cursor-pointer border border-black/20'
+          className='group bg-white  px-7 py-3 flex items-center gap-2 rounded-full outline-none buttonHover  transition cursor-pointer borderBlack'
           href='/CV.pdf'
           download>
           Download CV
