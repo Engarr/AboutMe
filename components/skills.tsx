@@ -29,7 +29,7 @@ const Skills = () => {
       id='skills'
       className='scroll-mt-28 mt-5 mb-28 max-w-[53rem] sm:mb-40'>
       <SectionHeading>My skills</SectionHeading>
-      <ul className='flexCenter flex-wrap gap-2 text-lg text-gray-800'>
+      <ul className='flexCenter flex-wrap gap-2 text-xs text-gray-800 sm:text-lg'>
         {skillsData.map((skill, index) => (
           <motion.li
             variants={fadeInAnimationVariants}
@@ -40,7 +40,7 @@ const Skills = () => {
             }}
             custom={index}
             key={index}
-            className='bg-white px-5 py-3 borderBlack rounded-xl'>
+            className='bg-white px-5 py-3 borderBlack rounded-xl dark:bg-white/20 dark:text-gray-200'>
             {skill}
           </motion.li>
         ))}

@@ -7,7 +7,13 @@ import { projectsData } from '@/lib/data';
 
 type ProjectProps = (typeof projectsData)[number];
 
-const Project = ({ title, description, imageUrl, tags }: ProjectProps) => {
+const Project = ({
+  title,
+  description,
+  imageUrl,
+  tags,
+  demo,
+}: ProjectProps) => {
   const ref = useRef<HTMLDivElement>(null);
 
   const { scrollYProgress } = useScroll({
@@ -29,17 +35,27 @@ const Project = ({ title, description, imageUrl, tags }: ProjectProps) => {
       <section
         className='flex bg-gray-100 max-w-[42rem] border border-black/5 overflow-hidden relative 
       sm:pr-8 sm:h-[20rem] 
-      group-even:pl-10 hover:bg-gray-200 transition rounded-lg'>
+      sm:group-even:pl-10 hover:bg-gray-200 transition rounded-lg dark:bg-white/10 dark:hover:bg-white/20 '>
         <div
           className='pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full 
-        group-even:ml-[20rem] '>
+        sm:group-even:ml-[20rem] '>
           <h3 className='text-2xl font-semibold'>{title}</h3>
-          <p className='mt-2 leading-relaxed text-gray-700'>{description}</p>
+          <p className='mt-2 leading-relaxed text-gray-700 dark:text-white/75'>
+            {description}
+          </p>
+          <div className='w-full flex text-left font-semibold text-xs capitalize'>
+            <a
+              target='_blank'
+              href={demo}
+              className='my-4 py-2 w-[30%] text-center rounded-2xl bg-gray-200 dark:text-white dark:bg-white/20 hover:scale-105 transition hover:bg-gray-100'>
+              Try demo
+            </a>
+          </div>
           <ul className='flex flex-wrap gap-2 mt-4 sm:mt-auto'>
             {tags.map((tag, index) => (
               <li
                 key={index}
-                className='bg-black/75 px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full'>
+                className='bg-black/75 px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/75 dark:bg-black/40'>
                 {tag}
               </li>
             ))}
@@ -50,7 +66,7 @@ const Project = ({ title, description, imageUrl, tags }: ProjectProps) => {
           src={imageUrl}
           alt={`iimage of ${title} - my project`}
           quality={95}
-          className='absolute -bottom-4 -right-[30%] w-[29.25rem] h-[85%] rounded-t-lg shadow-2xl 
+          className=' hidden sm:block absolute -bottom-4 -right-[30%] w-[29.25rem] h-[85%] rounded-t-lg shadow-2xl 
           transition 
           group-hover:-translate-x-3 
           group-hover:-translate-y-3 

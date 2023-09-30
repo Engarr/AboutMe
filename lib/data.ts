@@ -52,7 +52,7 @@ export const experiencesData = [
     location: 'Rzeszów, Poland',
     description:
       'Over the course of a year, I completed Frontend courses on the Udemy platform.',
-    icon: React.createElement(CgWorkAlt),
+    icon: React.createElement(LuGraduationCap),
     date: '2022 - present',
   },
 ] as const;
@@ -64,12 +64,14 @@ export const projectsData = [
       'I worked on my own full-stack project of an imaginary store that sells products in the grain department.',
     tags: ['React', 'Express', 'MongoDB', 'TypeScript', 'Redux'],
     imageUrl: windmillImg,
+    demo: 'https://windmill-app.vercel.app/',
   },
   {
     title: 'GameTrove',
     description: 'A gaming website featuring games from the IGDB database.',
     tags: ['React', 'Express', 'MongoDB', 'TypeScript', 'Redux'],
     imageUrl: gametrove,
+    demo: 'https://game-trove-app.vercel.app/',
   },
 ] as const;
 

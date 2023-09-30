@@ -56,7 +56,7 @@ const Intro = () => {
         </div>
       </div>
       <motion.h1
-        className='mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl'
+        className='mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl '
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}>
         <span className='font-bold'>Hello, I'm Łukasz.</span> I'm a{' '}
@@ -77,24 +77,26 @@ const Intro = () => {
           <BsArrowRight className='opacity-70 group-hover:translate-x-1 transition' />
         </Link>
         <a
-          className='group bg-white  px-7 py-3 flex items-center gap-2 rounded-full outline-none buttonHover  transition cursor-pointer borderBlack'
+          className='group bg-white  px-7 py-3 flex items-center gap-2 rounded-full outline-none buttonHover  transition cursor-pointer borderBlack dark:bg-white/10 dark:text-gray-200'
           href='/CV.pdf'
           download>
           Download CV
           <HiDownload className='opacity-60 group-hover:translate-y-1 transition' />
         </a>
-        <a
-          href='https://www.linkedin.com/in/%C5%82ukasz-wo%C5%9B-6a1970263/'
-          target='_blank'
-          className='bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 cursor-pointer border border-black/20 transition'>
-          <BsLinkedin />
-        </a>
-        <a
-          href='https://github.com/Engarr'
-          target='_blank'
-          className='bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 cursor-pointer border border-black/20 transition text-[1.35rem]'>
-          <FaGithubSquare />
-        </a>
+        <div className='flex gap-2'>
+          <a
+            href='https://www.linkedin.com/in/%C5%82ukasz-wo%C5%9B-6a1970263/'
+            target='_blank'
+            className='bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 cursor-pointer border border-black/20 transition dark:bg-white/10 dark:text-gray-200 flexCenter w-[3.5rem] h-[3.5rem] sm:w-[4rem] sm:h-[4rem]'>
+            <BsLinkedin />
+          </a>
+          <a
+            href='https://github.com/Engarr'
+            target='_blank'
+            className='bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 cursor-pointer border border-black/20 transition text-[1.35rem] dark:bg-white/10 dark:text-gray-200 flexCenter w-[3.5rem] h-[3.5rem] sm:w-[4rem] sm:h-[4rem]'>
+            <FaGithubSquare />
+          </a>
+        </div>
       </motion.div>
     </section>
   );
