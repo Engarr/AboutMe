@@ -3,6 +3,8 @@ import { CgWorkAlt } from 'react-icons/cg';
 import { LuGraduationCap } from 'react-icons/lu';
 import windmillImg from '@/public/windmill.png';
 import gametrove from '@/public/gametrove.png';
+import roadAssistand from '@/public/roadAssistant.png';
+import gymAssistant from '@/public/gymAssistant.png';
 
 export const links = [
   {
@@ -72,6 +74,21 @@ export const projectsData = [
     tags: ['React', 'Express', 'MongoDB', 'TypeScript', 'Redux'],
     imageUrl: gametrove,
     demo: 'https://game-trove-app.vercel.app/',
+  },
+  {
+    title: 'TRANSWOS - Roadside assistance page',
+    description: 'Website of a company providing roadside assistance.',
+    tags: ['Next.js', 'TypeScript', 'Frame motion'],
+    imageUrl: roadAssistand,
+    demo: 'https://roadside-assistance-website.vercel.app/',
+  },
+  {
+    title: 'Gym-Assistant',
+    description:
+      'Web application to manage your progress in the gym - application under development',
+    tags: ['Next.js', 'TypeScript', 'Frame motion', 'MongoDB'],
+    imageUrl: gymAssistant,
+    demo: 'https://project-x-engarr.vercel.app/',
   },
 ] as const;
 
