@@ -13,8 +13,7 @@ import { useActiveSectionContext } from '@/context/activeSection';
 
 const Intro = () => {
   const { ref } = useSectionInView('Home', 0.8);
-  const { activeSection, setActiveSection, setTimeOfLastClick } =
-    useActiveSectionContext();
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
     <section
