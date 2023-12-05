@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import React from 'react';
-import profilePhoto from '@/public/assets/images/profilePhoto.jpg';
+import profilePhoto from '@/public/profilePhoto.png';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { BsArrowRight, BsLinkedin } from 'react-icons/bs';

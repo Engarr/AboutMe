@@ -1,8 +1,8 @@
 import React from 'react';
 import { CgWorkAlt } from 'react-icons/cg';
 import { LuGraduationCap } from 'react-icons/lu';
-import windmillImg from '@/public/assets/images/windmill.png';
-import gametrove from '@/public/assets/images/gametrove.png';
+import windmillImg from '@/public/windmill.png';
+import gametrove from '@/public/gametrove.png';
 
 export const links = [
   {
